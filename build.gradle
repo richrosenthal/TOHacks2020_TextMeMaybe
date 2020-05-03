@@ -1,0 +1,27 @@
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'eclipse'
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+    //test
+    id 'io.spring.dependency-management' version '1.0.7.RELEASE'
+}
+
+group 'com.tohacks2020'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    // https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf
+    // compile group: 'org.thymeleaf', name: 'thymeleaf', version: '2.1.4.RELEASE'
+
+
+}

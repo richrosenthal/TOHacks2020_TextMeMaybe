@@ -2,7 +2,7 @@ package com.tohacks2020.textmemaybe.model;
 
 import  java.time.LocalDate;
 
-public class User {
+public class TextMe {
     private String name;
     private String email;
     private String password;
@@ -10,14 +10,14 @@ public class User {
     private String phoneNumber;
     private String message;
 
-    public User(String name, String email, String password, LocalDate dateCreated, String phoneNumber, String message) {
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.dateCreated = dateCreated;
-        this.phoneNumber = phoneNumber;
-        this.message = message;
-    }
+//    public TextMe(String name, String email, String password, LocalDate dateCreated, String phoneNumber, String message) {
+//        this.name = name;
+//        this.email = email;
+//        this.password = password;
+//        this.dateCreated = dateCreated;
+//        this.phoneNumber = phoneNumber;
+//        this.message = message;
+//    }
 
     public String getName() {
         return name;

@@ -1,10 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>HelloWorld!!</title>
+    <title>Send a Text in French!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+body {
+  background-image: url('/images/gradient.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+    <style>
+        form {
+margin: 0 auto;
+width:250px;
+
+}
+    </style>
+    <style>
+        h2 {
+margin: 0 auto;
+width:250px;
+}
+    </style>
+    <style>
+        div {
+margin: 0 auto;
+width:250px;
+}
+    </style>
 </head>
 <body>
+    <h2>Enter a phone number a message you want translated into French!</h2>
+    <form th:action="@{/home}" th:object="${textme}" method="post">
+        <div>
+            Phone Number: <input type="text" th:field="*{phoneNumber}" />
+        </div>
+        <div>
+            Message: <input type="text" th:field="*{message}" />
+        </div>
 
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
